@@ -4,7 +4,7 @@ import audioClipMission from '../../assets/missioncomplete.mp3';
 import audioClipMenu from '../../assets/menusound.mp3';
 import Tasks from '../Tasks/Tasks';
 
-const Main = () => {
+const MainSignedOut = () => {
   const [minutes, setMinutes] = useState(25);
   const [seconds, setSeconds] = useState(0);
   const [startMessage, setStartMessage] = useState(true);
@@ -91,9 +91,8 @@ const Main = () => {
           </div>
         </div>
       </div>
-      <Tasks />
     </div>
   );
 };
 
-export default Main;
+export default MainSignedOut;

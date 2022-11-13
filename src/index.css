@@ -10,9 +10,41 @@
     LightAccent: #F2E7D5,
 } */
 
+@layer components {
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 4px;
+  }
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background-color: #9eefe5;
+    width: 5px;
+    border-radius: 10px;
+  }
+  .custom-scrollbar-dark::-webkit-scrollbar-thumb {
+    background-color: #9eefe5;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #a5b4fc;
+  width: 10px;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #6d9886;
+}
+
 body {
-    background-color: #393e46;
-    color: #f7f7f7;
-    font-family: 'Roboto Mono', monospace;
-    padding-bottom: 30px;
+  background-color: #393e46;
+  color: #f7f7f7;
+  font-family: 'Roboto Mono', monospace;
+  padding-bottom: 30px;
 }
