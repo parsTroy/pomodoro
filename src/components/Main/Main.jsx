@@ -126,14 +126,14 @@ const Main = () => {
 
     return (
         <div className="grid text-center align-center justify-center">
-            <div className="w-100 mt-20 align-center justify-center">
+            <div className="mt-12">
                 {startMessage && (
                     <p className="text-2xl">Press Start to Begin!</p>
                 )}
                 {breakMessage && <p className="text-2xl">Break time!</p>}
             </div>
             <div className="flex text-center align-center justify-center">
-                <div className="mt-12 w-[450px] h-[400px] rounded-md align-center justify-center bg-[#6D9886]">
+                <div className="mt-8 w-[450px] h-[400px] rounded-md align-center justify-center bg-[#6D9886]">
                     {/* <div className="flex justify-center bg-[#6D9886] rounded-md">
                         <button className="w-32 h-12 rounded-md bg-greenTran-950 p-3 m-2 mt-8">
                             Short
