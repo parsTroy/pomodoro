@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 /* Color Pallete {
-    BG: #191A19,
+    BG: #393e46,
         {rgba(109, 152, 134, .20)}
     Text: #F7F7F7;,
     Accent: #6D9886;,
@@ -14,4 +14,5 @@ body {
     background-color: #393e46;
     color: #f7f7f7;
     font-family: 'Roboto Mono', monospace;
+    padding-bottom: 30px;
 }
