@@ -17,6 +17,12 @@ const MainSignedOut = () => {
     startSound();
   };
 
+  const reset = () => {
+    setSeconds(59);
+    setMinutes(24);
+    startSound();
+  };
+
   const startSound = () => {
     const sound = new Howl({
       src: audioClipMenu,
@@ -61,7 +67,7 @@ const MainSignedOut = () => {
     } else {
       return;
     }
-  }, [seconds]);
+  }, [seconds, minutes, breakMessage, reset]);
 
   const timerMinutes = minutes < 10 ? `0${minutes}` : minutes;
   const timerSeconds = seconds < 10 ? `0${seconds}` : seconds;
@@ -81,16 +87,31 @@ const MainSignedOut = () => {
               </p>
             </div>
             <div className="flex justify-center mt-12">
-              <button
-                onClick={start}
-                className="text-2xl text-[#6D9886] w-40 h-16 rounded-md bg-[#f7f7f7] p-4"
-              >
-                START
-              </button>
+              {!startMessage ? (
+                ''
+              ) : (
+                <button
+                  onClick={start}
+                  className="text-2xl text-[#6D9886] w-40 h-16 rounded-md bg-[#f7f7f7] p-4"
+                >
+                  START
+                </button>
+              )}
+              {startMessage ? (
+                ''
+              ) : (
+                <button
+                  onClick={reset}
+                  className="text-2xl text-[#6D9886] w-40 h-16 rounded-md bg-[#f7f7f7] p-4"
+                >
+                  RESET
+                </button>
+              )}
             </div>
           </div>
         </div>
       </div>
+      <div className="mt-10">Login to add tasks!</div>
     </div>
   );
 };
