@@ -97,16 +97,6 @@ const Main = () => {
                   START
                 </button>
               )}
-              {startMessage ? (
-                ''
-              ) : (
-                <button
-                  onClick={reset}
-                  className="text-2xl text-[#6D9886] w-40 h-16 rounded-md bg-[#f7f7f7] p-4"
-                >
-                  RESET
-                </button>
-              )}
             </div>
           </div>
         </div>
