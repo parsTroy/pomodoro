@@ -3,6 +3,7 @@ import { Howl, Howler } from 'howler';
 import audioClipMission from '../../assets/missioncomplete.mp3';
 import audioClipMenu from '../../assets/menusound.mp3';
 import Tasks from '../Tasks/Tasks';
+import RandomQuotes from '../RandomQuotes/RandomQuotes';
 
 const MainSignedOut = () => {
   const [minutes, setMinutes] = useState(25);
@@ -97,17 +98,8 @@ const MainSignedOut = () => {
                   START
                 </button>
               )}
-              {startMessage ? (
-                ''
-              ) : (
-                <button
-                  onClick={reset}
-                  className="text-2xl text-[#6D9886] w-40 h-16 rounded-md bg-[#f7f7f7] p-4"
-                >
-                  RESET
-                </button>
-              )}
             </div>
+            {/* <RandomQuotes /> */}
           </div>
         </div>
       </div>
